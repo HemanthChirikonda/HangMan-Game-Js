@@ -56,9 +56,9 @@ gamePage.append(wrongguess);
 
 let hangStation=document.createElement('div');
 hangStation.id='hangStation';
-if(mistakes===0){
-    hangStation.innerHTML= `<img class=    'image1' src="images/empty.png">`;
-}
+
+    hangStation.innerHTML= `<img class='image1' class='image src="images/empty.png">`;
+  
 
 gamePage.append(hangStation);
 let keyboard=document.createElement('div');
@@ -72,6 +72,10 @@ let guessWordDiv = document.createElement('p');
 guessWordDiv.id='guessWord';
 wordArea.append(guessWordDiv);
 gamePage.append(wordArea);
+let footer= document.createElement('footer');
+footer.id='footer';
+footer.innerText='All copyrights reserved.'
+gamePage.append(footer);
 
 document.body.append(gamePage);
 

@@ -9,23 +9,24 @@
 #game{
     position: relative;
    top: 50px;
-   height:100rem;
-    width:50%;
+   height:120vh;
+   width: 50vw;
   margin: auto;
+  padding: 1vw;
 background-color: rgb(47, 124, 155);
 }
 
 #header{
-position: relative;
+
 margin-left: 10%;
 font-weight: 900;
-font-size: 30px;
+font-size: 6vw;
 font-family: 'Oldenburg', cursive;
 }
 #level-p{
-    position: relative;
-   
-    top: 1rem;
+    font-family: 'Oldenburg', cursive;
+   float: left;
+    top: 1vw;
     margin-right: 10%;
     margin-left: 10%;
 
@@ -39,36 +40,45 @@ font-family: 'Oldenburg', cursive;
 
 #hangStation{
 position: relative;
-margin-right: 10%;
-float: left;
-padding-left: 10%;
+width: 11vw;
+height: 15vw;
+margin: auto;
+
 
 }
 .image1{
     position: relative;
-    width: 100%;
-    margin-right: 10%;
-
+ width: 10vw;
+  
 }
+
 
 
 .alphaPage_class{
 
     position: relative;
-    float: right;
+   
     padding: 0.5%;
     align-items: center;
     margin: auto;
-    width: 30%;
-    float: right;
-    padding-right: 10%;
-    padding-top: 10%;
+   
+    width: 50%;
+    margin-top: 10vh;
+   
+}
+
+@counter-style{
+    if(device-width<400px){
+        .alphaPage_class{
+            
+        }
+    }
 }
 
 .alpha{
     position: relative;
- width: 2rem;
- margin: 0.1rem;
+ width: 2vw;
+ margin: 0.1vw;
  font-family: 'Oldenburg', cursive;
  font-weight: bold;
  background-image: url(images/wood.jpg);
@@ -97,7 +107,7 @@ width:100%;
 height: 50%;
 float: left;
 text-align: center;
-font-size: 2rem;
+font-size: 2vw;
 }
 
 #guessWord{
@@ -105,13 +115,21 @@ font-size: 2rem;
     width: max-content;
     margin: auto;
 
-font-size: 4rem;
+font-size: 4vw;
 border-style: ridge;
 border-radius: 5px;
 color: snow;
 background-image: url(images/wood.jpg);
 }
 
+
+#footer{
+    position: relative;
+    font-size: 1vw;
+    top: 60vh;
+    border-top: rgb(17, 16, 16) solid 1px;
+    background-color: rgb(47, 124, 155);
+}
 </style>
 
 
